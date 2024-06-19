@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chucha Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="/chucha.jpg" alt="chucha image" height="200px">
+        <h1>"Chucha Satta Prediction"</h1>
+
+    </header>
+    
+    <main>
+        <div>
+            <!-- <h4>The current date and time is:</h4> -->
+            <p id="date-container"></p> <!-- This is where the date and time will be displayed -->
+          </div>
+     <h2>Your Name Please</h2>
+     <input type="text" id="yourName" placeholder="Enter Your Name" onchange="hiName()">
+     <h3 id="hiName" style="color:rgb(131, 62, 5)"></h3>
+     <h4>Your Date of Birth</h4>
+     <input type="date" id="dob" onchange="dob()" placeholder="DD-MM-YYYY">
+     <p id="yourDob"></p>
+
+     <h4>Enter Satta Name</h4>
+     <input type="text" id="inputSattaName" placeholder="Satta Name" onchange="sattaName()">
+     <p id="sattaName"></p>
+    
+     <h4>Enter Previous Number</h4>
+     <input type="number" id="input"  placeholder="select your number" onchange="showNumber()">
+     <br>
+     
+     <!-- <button onclick="showNumber()">Submit</button> -->
+     <p id="yourNumber" ></p>
+     <h3>Hit the button below to get Jeckpot Number</h3>
+     <button onclick="luckyNumber()">Hit</button>
+     <h4 id="luckyNumber"></h4>
+     <p id="paragraph"></p>
+     <p id="change" onchange="change()"></p>
+    </main>
+    <hr>
+
+<div role="disclaimer">
+    <p style="color: red;">Warning: This game is for Fun purpose only. if you take this advice it is purily on your risk.</p>
+    <p>All Right Reserved.</p>
+</div>
+   
+    
+    <script src="index.js"></script>
+</body>
+</html>
